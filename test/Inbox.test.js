@@ -10,16 +10,20 @@ let inbox;
 const INITIAL_MESSAGE = 'INBOX SMART CONTRACT';
 
 
-beforeEach(async () => {
-    accounts = await web3.eth.getAccounts();
-    // Use one of those accounts to deploy the contract 
-    inbox = await new web3.eth.Contract(JSON.parse(interface))
-        .deploy({ data: bytecode, arguments: [INITIAL_MESSAGE] })
-        .send({ from: accounts[0], gas: '1000000' });
-    inbox.setProvider(provider);
-    
-})
 describe('Module Test: Inbox', () => {
+    beforeEach(async () => {
+        accounts = await web3.eth.getAccounts();
+        // Use one of those accounts to deploy the contract 
+        inbox = await new web3.eth.Contract(JSON.parse(interface))
+            .deploy({ data: bytecode, arguments: [INITIAL_MESSAGE] })
+            .send({ from: accounts[0], gas: '1000000' });
+        inbox.setProvider(provider);
+        
+    })
+    afterEach(async () => {
+        let message = await inbox.methods.message().call();
+        console.log("\tMessage in the contract: ", message);
+    })
     it('deploys a contract', () => {
         assert.ok(inbox.options.address);
     })

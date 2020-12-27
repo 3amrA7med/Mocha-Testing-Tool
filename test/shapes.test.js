@@ -1,21 +1,35 @@
 const assert = require('assert'); 
-const ShapesList = require('../examples/shapes');
-//const Rectangle = require('../examples/shapes');
-//const Square = require('../examples/shapes');
-const Circle = require('../examples/shapes');
+const ShapesList = require('../examples/shapesList.module');
+const Rectangle = require('../examples/rectangle.module');
+const Square = require('../examples/square.module');
+const Circle = require('../examples/circle.module');
 
-let shapes;
+let shapes, circle, square, rectangle;
 
-describe('before and after hooks', function() {
-    before('define shapes object',function() {
+describe('Integration Testig: between shapes', function() {
+
+    before('define shapes object one time before integration testing',function() {
         // runs once before the first test in this block
         shapes = new ShapesList();
     });
     it('Add circle to list', () => {
-        // should set the timeout of this test to 1000 ms; instead will fail
-        //this.timeout(1000);
-        // let circle = new Circle(3);
-        // shapes.addShape(circle);
-        // assert.equal(shapes.list.length, 1);        
+        circle = new Circle(3);
+        shapes.addShape(circle);
+        assert.equal(shapes.list.length, 1);        
     });
+
+    it('Add square and reactangle to same list', () => {
+        square = new Square(3);
+        rectangle = new Rectangle(4,5);
+        shapes.addShape(square);
+        shapes.addShape(rectangle);
+        assert.equal(shapes.list.length, 3);        
+    });
+
+    it('Compute stats')
+   
+
+    after("Check list elements count after all tests", function() {
+        delete shapes;
+    })
 });
