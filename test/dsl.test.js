@@ -1,5 +1,7 @@
 const sayHello = require('../examples/dsl').sayHello;
-const assert = require('assert'); 
+const assert = require('assert');
+mocha.setup('bdd');
+
 //----------------------        BDD         ----------------------//
 /*
 BDD is the most common interface (Behavior Driven Development), develop then write test.
