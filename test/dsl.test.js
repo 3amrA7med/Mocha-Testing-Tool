@@ -1,6 +1,5 @@
 const sayHello = require('../examples/dsl').sayHello;
 const assert = require('assert');
-mocha.setup('bdd');
 
 //----------------------        BDD         ----------------------//
 /*
