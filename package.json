@@ -12,7 +12,7 @@
     "testdelay": "mocha --delay || true",
     "testregex": "mocha --grep async || true",
     "markdown": "mocha --no-config --reporter markdown || true",
-    "xunit": "mocha ./test/car.test.js --reporter xunit --reporter-option output=test.xml"
+    "xunit": "mocha --reporter xunit --reporter-option output=XUnitXMLFormat.xml"
   },
   "author": "",
   "license": "ISC",

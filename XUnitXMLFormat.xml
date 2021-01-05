@@ -1,0 +1,43 @@
+<testsuite name="Mocha Tests" tests="41" failures="0" errors="0" skipped="2" timestamp="Tue, 05 Jan 2021 20:10:31 GMT" time="7.306">
+<testcase classname="should assert" name="Circle Object" time="0"/>
+<testcase classname="should assert" name="Circle radius" time="0.002"/>
+<testcase classname="should assert" name="Circle name" time="0"/>
+<testcase classname="should assert" name="Circle area" time="0"/>
+<testcase classname="should assert" name="Circle perimeter" time="0"/>
+<testcase classname="should assert" name="ShapesLists list and length (two assertion in one statement)" time="0"/>
+<testcase classname="expect assert" name="square Object" time="0.001"/>
+<testcase classname="expect assert" name="square sidelength" time="0.001"/>
+<testcase classname="expect assert" name="square name" time="0.001"/>
+<testcase classname="expect assert" name="square area" time="0.001"/>
+<testcase classname="expect assert" name="square perimeter" time="0.001"/>
+<testcase classname="expect assert" name="ShapesLists list and length" time="0.001"/>
+<testcase classname="expect assert" name="square2 is not defined" time="0"/>
+<testcase classname="better-assert assert" name="square width and length" time="0"/>
+<testcase classname="better-assert assert" name="rectangle name" time="0"/>
+<testcase classname="better-assert assert" name="rectangle area" time="0"/>
+<testcase classname="better-assert assert" name="rectangle perimeter" time="0"/>
+<testcase classname="better-assert assert" name="ShapesLists length" time="0"/>
+<testcase classname="better-assert assert" name="square width and length" time="0"/>
+<testcase classname="better-assert assert" name="rectangle name" time="0"/>
+<testcase classname="better-assert assert" name="rectangle area" time="0"/>
+<testcase classname="better-assert assert" name="rectangle perimeter" time="0"/>
+<testcase classname="better-assert assert" name="ShapesLists length" time="0"/>
+<testcase classname="Module Test: Inbox" name="deploys a contract" time="0"/>
+<testcase classname="Module Test: Inbox" name="deployed contract has a default message" time="0.023"/>
+<testcase classname="Module Test: Inbox" name="can change the message in the deployed contract" time="0.083"/>
+<testcase classname="Module Test: Inbox" name="change state of the message from unseen to seen" time="0"><skipped/></testcase>
+<testcase classname="CAR" name="Park Function" time="0"/>
+<testcase classname="CAR" name="Drive Function" time="0"/>
+<testcase classname="BDD Test 1 nested group" name="sayHello should return hello" time="0"/>
+<testcase classname="BDD Test 1 nested group" name="sayHello should not say bye" time="0"/>
+<testcase classname="BDD Test 2 nested group" name="sayHello should return hello" time="0"/>
+<testcase classname="Require tests" name="it should return Hello" time="0"/>
+<testcase classname="Get data from API, test using async await" name="should return 10 users" time="1.561"/>
+<testcase classname="Get data from API, test Async function with call back" name="should return 10 users" time="1.155"/>
+<testcase classname="Get data from API, Return a promise" name="should return 10 users" time="0.991"/>
+<testcase classname="Testing retries" name="Checking the length of the rectangle and retrying if not valid" time="0"/>
+<testcase classname="Testing shapesList" name="Add circle to list" time="0"/>
+<testcase classname="Testing shapesList" name="Add square and reactangle to same list" time="0"/>
+<testcase classname="Testing shapesList" name="Delay the test for a given time" time="3.001"/>
+<testcase classname="Testing shapesList" name="Compute stats skipped" time="0"><skipped/></testcase>
+</testsuite>
