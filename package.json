@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true",
+    "test": "nyc mocha || true",
     "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true"
   },
   "author": "",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "axios": "^0.21.1",
     "expect.js": "^0.3.1",
+    "nyc": "^15.1.0",
     "should": "^0.3.2"
   }
 }
