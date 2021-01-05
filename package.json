@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha || true",
-    "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true"
+    "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true",
+    "reporter": "mocha ./test/car.test.js --no-config --reporter landing",
+    "watcher": "mocha ./test/car.test.js --no-config --reporter min --watch",
+    "growl": "mocha ./test/car.test.js --no-config --growl"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "axios": "^0.21.1",
     "expect.js": "^0.3.1",
+    "growl": "^1.10.5",
     "nyc": "^15.1.0",
     "should": "^13.2.3"
   }
