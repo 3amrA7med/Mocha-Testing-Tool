@@ -39,3 +39,17 @@ describe('Get data from API, Return a promise', function() {
     });
  
  });
+
+ setTimeout(async function() {
+    var users = await getUsers()
+     
+     describe('Async setup', function() {
+    
+        it('should has 10 users', function() {
+            assert.equal(users.data.length, 10);
+    
+       });
+    
+    });
+    run()
+},5000);

@@ -9,6 +9,7 @@
     "reporter": "mocha ./test/car.test.js --no-config --reporter landing",
     "watcher": "mocha ./test/car.test.js --no-config --reporter min --watch",
     "growl": "mocha ./test/car.test.js --no-config --growl",
+    "testdelay": "mocha --delay || true",
     "markdown": "mocha --no-config --reporter markdown || true"
 
   },
