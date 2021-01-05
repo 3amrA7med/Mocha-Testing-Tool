@@ -1,12 +1,6 @@
-
-> inbox@1.0.0 markdown /mnt/c/Users/abdur/Desktop/Final Year/First Term/Testing/Project/Mocha-Testing-Tool
-> mocha --no-config --reporter markdown || true
-
 	Message in the contract:  INBOX SMART CONTRACT
 	Message in the contract:  INBOX SMART CONTRACT
 	Message in the contract:  Changed
-test didn't pass at length =  6 retrying..
-test didn't pass at length =  5 retrying..
 # TOC
    - [should assert](#should-assert)
    - [expect assert](#expect-assert)
