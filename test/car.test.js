@@ -1,5 +1,5 @@
 const assert = require('assert'); 
-const Car = require('../examples/example');
+const Car = require('../examples/car');
 
 // Make the car variable global
 let car;
