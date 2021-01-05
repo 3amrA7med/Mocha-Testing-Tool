@@ -12,7 +12,8 @@
     "testdelay": "mocha --delay || true",
     "testregex": "mocha --grep async || true",
     "markdown": "mocha --no-config --reporter markdown || true",
-    "exclusive": "mocha --no-config"
+    "exclusive": "mocha --no-config",
+    "xunit": "mocha ./test/car.test.js --reporter xunit --reporter-option output=test.xml"
   },
   "author": "",
   "license": "ISC",

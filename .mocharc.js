@@ -10,7 +10,7 @@ module.exports = {
   extension: ['js'],
   package: './package.json',
   reporter: 'spec',
-  timeout: 10000,
+  timeout: 20000,
   ui: 'bdd',
   'watch-files': ['examples/*.js', 'test/*.js'],
 };
