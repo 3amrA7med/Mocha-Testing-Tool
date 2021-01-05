@@ -10,6 +10,7 @@
     "watcher": "mocha ./test/car.test.js --no-config --reporter min --watch",
     "growl": "mocha ./test/car.test.js --no-config --growl",
     "testdelay": "mocha --delay || true",
+    "testregex": "mocha --grep async || true",
     "markdown": "mocha --no-config --reporter markdown || true"
   },
   "author": "",
