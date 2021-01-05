@@ -49,11 +49,11 @@ describe('Testing shapesList', function() {
         assert(shapes.list.avgAreas, 1);
     })
 
-    // Exclusive, only test excuted
-    // it.only('Compute stats failed error', () => {
-    //     shapes.computeStats()
-    //     assert(shapes.list.avgAreas, 1);
-    // })
+    //Exclusive, only test excuted
+    it.only('Compute stats failed error', () => {
+        shapes.computeStats()
+        assert(shapes.list.avgAreas, 1);
+    })
 
     after("Check list elements count after all tests", function() {
         delete shapes;
