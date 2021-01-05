@@ -8,7 +8,9 @@
     "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true",
     "reporter": "mocha ./test/car.test.js --no-config --reporter landing",
     "watcher": "mocha ./test/car.test.js --no-config --reporter min --watch",
-    "growl": "mocha ./test/car.test.js --no-config --growl"
+    "growl": "mocha ./test/car.test.js --no-config --growl",
+    "markdown": "mocha --no-config --reporter markdown || true"
+
   },
   "author": "",
   "license": "ISC",
