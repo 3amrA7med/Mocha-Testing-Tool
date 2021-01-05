@@ -38,7 +38,7 @@ describe('#substract()', function() {
     context('with number arguments', function() {
     
       it('should return substraction of arguments', function() {
-        expect(substract(1, 2)).to.equal(-1)
+        expect(substract(1, 2)).to.equal(-21)
       })
       
     })

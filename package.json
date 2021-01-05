@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha || true",
+    "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true"
   },
   "author": "",
   "license": "ISC",
