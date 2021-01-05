@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha || true",
-    "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true",
     "reporter": "mocha ./test/car.test.js --no-config --reporter landing",
     "watcher": "mocha ./test/car.test.js --no-config --reporter min --watch",
-    "growl": "mocha ./test/car.test.js --no-config --growl",
     "testdelay": "mocha --delay || true",
     "testregex": "mocha --grep async || true",
     "markdown": "mocha --no-config --reporter markdown || true",
     "exclusive": "mocha --no-config",
-    "xunit": "mocha --reporter xunit --reporter-option output=XUnitXMLFormat.xml"
+    "tdd_test": "mocha ./tdd.test.js --no-config -u \"tdd\" || true",
+    "xunit": "mocha --reporter xunit --reporter-option output=XUnitXMLFormat.xml",
+    "growl": "mocha ./test/car.test.js --no-config --growl"
   },
   "author": "",
   "license": "ISC",
