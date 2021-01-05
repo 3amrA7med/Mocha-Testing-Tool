@@ -30,12 +30,11 @@ describe('Get data from API, test Async function with call back', function() {
 });
 
 describe('Get data from API, Return a promise', function() {
-     this.slow(5000);
- 
-     it('should return 10 users', function() {
-        return getUsers().
-        then(res => assert.equal(res.data.length, 10));
+    this.slow(5000);
 
+    it('should return 10 users', function() {
+    return getUsers().
+    then(res => assert.equal(res.data.length, 10));
     });
  
  });

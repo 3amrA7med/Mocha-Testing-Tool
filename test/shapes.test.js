@@ -20,7 +20,7 @@ describe('Testing shapesList', function() {
         assert.equal(shapes.list.length, 1);        
     });
 
-    // Exclusive 
+    // Exclusive test
     // it.only('Add circle to list', () => {
     //     circle = new Circle(3);
     //     shapes.addShape(circle);

@@ -12,6 +12,7 @@
     "testdelay": "mocha --delay || true",
     "testregex": "mocha --grep async || true",
     "markdown": "mocha --no-config --reporter markdown || true",
+    "exclusive": "mocha --no-config",
     "xunit": "mocha --reporter xunit --reporter-option output=XUnitXMLFormat.xml"
   },
   "author": "",
